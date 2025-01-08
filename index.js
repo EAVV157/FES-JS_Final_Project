@@ -29,7 +29,7 @@ function showUserPosts(id) {
         window.location.href = `${window.location.origin}/user.html`;
     }
     else {
-        window.location.href += `/user.html`;
+        window.location.href += `user.html`;
     }
 }
 
