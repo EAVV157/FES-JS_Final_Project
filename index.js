@@ -25,7 +25,12 @@ function userHTML(user){
 
 function showUserPosts(id) {
     localStorage.setItem("id", id);
-    window.location.href = `${window.location.origin}/user.html`;
+    if(window.location.port){
+        window.location.href = `${window.location.origin}/user.html`;
+    }
+    else {
+        window.location.href += `/user.html`;
+    }
 }
 
 main();
