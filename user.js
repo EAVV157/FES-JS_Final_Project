@@ -3,7 +3,7 @@ const id = localStorage.getItem("id");
 document.querySelector('.post__input').value = id;
 
 function postHTML(post) {
-  return `<div class="post">
+  return `<div class="post post-card">
               <div class="post__title">
                 ${post.title}
               </div>
