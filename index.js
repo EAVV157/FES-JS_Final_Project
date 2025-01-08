@@ -24,8 +24,8 @@ function userHTML(user){
 }
 
 function showUserPosts(id) {
-    const currentUrl = window.location.host;
-    console.log(currentUrl);
+    localStorage.setItem("id", id);
+    window.location.href = `${window.location.origin}/user.html`;
 }
 
 main();
